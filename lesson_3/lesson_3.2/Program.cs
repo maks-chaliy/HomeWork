@@ -6,11 +6,12 @@ int Coordinats(string argument)
 {
   Console.Write($"Enter coordinats dotts {argument}:");
   int number = int.Parse(Console.ReadLine());
-  return number;
+  
   while(!int.TryParse(Console.ReadLine(), out number))
   {
     Console.WriteLine("Not a number");
   }
+  return number;
 }
 
 double Distance()
